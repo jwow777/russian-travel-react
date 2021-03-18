@@ -1,0 +1,22 @@
+.footer {
+  max-width: 100%;
+  margin: 0 48px 24px;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(2, max-content);
+}
+
+@media screen and (max-width: 949px) {
+  .footer {
+    margin: 0 24px 24px;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .footer {
+    margin: 0 16px 24px;
+    grid-template-columns: max-content;
+    grid-template-rows: repeat(2, max-content);
+    grid-row-gap: 32px;
+  }
+}

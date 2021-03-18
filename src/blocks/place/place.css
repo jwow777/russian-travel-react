@@ -1,0 +1,26 @@
+.place {
+  display: grid;
+  grid-template-columns: 48% 1fr;
+  grid-template-rows: max-content;
+  grid-column-gap: 40px;
+  grid-row-gap: 48px;
+}
+
+@media screen and (max-width: 1100px) {
+  .place {
+    grid-column-gap: 32px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .place {
+    grid-column-gap: 28px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .place {
+    grid-template-columns: 1fr;
+    grid-row-gap: 32px;
+  }
+}

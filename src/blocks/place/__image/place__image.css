@@ -1,0 +1,9 @@
+.place__image {
+  width: 100%;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.place__image:hover {
+  box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.5);
+}

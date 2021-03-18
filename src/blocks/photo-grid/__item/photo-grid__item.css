@@ -1,0 +1,28 @@
+.photo-grid__item {
+  position: relative;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+}
+
+.photo-grid__item::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background-image: url(https://icon-library.com/images/white-search-icon-transparent-background/white-search-icon-transparent-background-1.jpg);
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: center;
+  opacity: 0;
+  transition: all .3s ease-in-out;
+}
+
+.photo-grid__item:hover::after {
+  background-color: rgba(0, 0, 0, 0.35);
+  opacity: 1;
+  box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
