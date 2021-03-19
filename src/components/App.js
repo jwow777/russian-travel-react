@@ -1,24 +1,26 @@
-import React from 'react';
+import { useState } from 'react';
 import './App.css';
 import Header from './Header';
 import Main from './Main';
 import Footer from './Footer';
 import ImagePopup from './ImagePopup';
+import { TranslationContext, translations } from "../contexts/TranslationContext";
 
 function App() {
-  const [selectedImage, setSelectedImage] = React.useState(false);
+  const [selectedImage, setSelectedImage] = useState(false);
+  const [lang, setLang] = useState("en");
   
   function closePopup() {
     setSelectedImage(false);
   }
-
+  
   return (
-    <>
-      <Header/>
-      <Main onImageClick={setSelectedImage}/>
-      <Footer/>
-      <ImagePopup image={selectedImage} onClose={closePopup}/>
-    </>
+    <TranslationContext.Provider value={translations[lang]}>
+      <Header isLang={lang} setLang={setLang}/>
+      <Main onImageClick={setSelectedImage} isLang={lang}/>
+      <Footer isLang={lang}/>
+      <ImagePopup image={selectedImage} onClose={closePopup} />
+    </TranslationContext.Provider>
   );
 }
 

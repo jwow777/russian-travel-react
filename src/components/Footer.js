@@ -1,16 +1,25 @@
-function Footer() {
+import { TranslationContext } from "../contexts/TranslationContext";
+import { useContext } from "react";
+import footerList from "../utils/footerList";
+import FooterList from "./FooterList";
+
+function Footer(props) {
+  const translation = useContext(TranslationContext);
   return (
     <footer className="footer">
       <nav>
         <ul className="footer__links">
-          <li className="footer__item"><a href="https://yandex.ru/maps" className="footer__link">Карты</a></li>
-          <li className="footer__item"><a href="https://yandex.ru/pogoda" className="footer__link">Погода</a></li>
-          <li className="footer__item"><a href="https://rasp.yandex.ru" className="footer__link">Расписание</a></li>
-          <li className="footer__item"><a href="https://calendar.yandex.ru" className="footer__link">Календарь</a></li>
-          <li className="footer__item"><a href="https://travel.yandex.ru" className="footer__link">Путешествия</a></li>
+          {footerList.map((item,index) => 
+            <FooterList 
+              text={item.text}
+              link={item.link}
+              isLang={props.isLang}
+              key={index}
+            />
+          )}
         </ul>
       </nav>
-      <p className="footer__copyright">&copy; 2020. Александр Распертов</p>
+      <p className="footer__copyright">&copy; {translation.footerCopyright}</p>
     </footer>
   );
 }

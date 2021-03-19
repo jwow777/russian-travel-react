@@ -1,13 +1,12 @@
 import headerLogo from '../images/header-logo.svg';
 
-function Header() {
+function Header(props) {
+  const handleChangeLang = (e) => props.setLang(e.target.textContent.toLowerCase());
+
   return (
     <header className="header">
-      <img src={headerLogo} className="header__logo" alt="Россия" />
-      <ul className="header__lang-links">
-        <li><a href="/" className="header__lang-link header__lang-link_true">Ru</a></li>
-        <li><a href="/" className="header__lang-link">En</a></li>
-      </ul>
+      <img src={headerLogo} className="header__logo" alt="Россия"/>
+      <p className="header__lang-link" onClick={handleChangeLang}>{props.isLang === 'ru' ? 'En' : 'Ru'}</p>
     </header>
   );
 }
