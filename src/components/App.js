@@ -8,7 +8,7 @@ import { TranslationContext, translations } from "../contexts/TranslationContext
 
 function App() {
   const [selectedImage, setSelectedImage] = useState(false);
-  const [lang, setLang] = useState("en");
+  const [lang, setLang] = useState("ru");
   
   function closePopup() {
     setSelectedImage(false);
