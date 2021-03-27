@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.94b12a00.chunk.css",
-    "main.js": "/static/js/main.913cbf6f.chunk.js",
-    "main.js.map": "/static/js/main.913cbf6f.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.8e084e13.js",
-    "runtime-main.js.map": "/static/js/runtime-main.8e084e13.js.map",
-    "static/js/2.68830b48.chunk.js": "/static/js/2.68830b48.chunk.js",
-    "static/js/2.68830b48.chunk.js.map": "/static/js/2.68830b48.chunk.js.map",
-    "static/js/3.68be899b.chunk.js": "/static/js/3.68be899b.chunk.js",
-    "static/js/3.68be899b.chunk.js.map": "/static/js/3.68be899b.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.94b12a00.chunk.css.map": "/static/css/main.94b12a00.chunk.css.map",
-    "static/js/2.68830b48.chunk.js.LICENSE.txt": "/static/js/2.68830b48.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/static/media/cover-trains.d20ab4cb.jpg",
-    "static/media/header-logo.573918d3.svg": "/static/media/header-logo.573918d3.svg",
-    "static/media/lead-polka.b27972c0.jpg": "/static/media/lead-polka.b27972c0.jpg"
+    "main.css": "/russian-travel-react/static/css/main.da3088f9.chunk.css",
+    "main.js": "/russian-travel-react/static/js/main.913cbf6f.chunk.js",
+    "main.js.map": "/russian-travel-react/static/js/main.913cbf6f.chunk.js.map",
+    "runtime-main.js": "/russian-travel-react/static/js/runtime-main.807d7b12.js",
+    "runtime-main.js.map": "/russian-travel-react/static/js/runtime-main.807d7b12.js.map",
+    "static/js/2.68830b48.chunk.js": "/russian-travel-react/static/js/2.68830b48.chunk.js",
+    "static/js/2.68830b48.chunk.js.map": "/russian-travel-react/static/js/2.68830b48.chunk.js.map",
+    "static/js/3.68be899b.chunk.js": "/russian-travel-react/static/js/3.68be899b.chunk.js",
+    "static/js/3.68be899b.chunk.js.map": "/russian-travel-react/static/js/3.68be899b.chunk.js.map",
+    "index.html": "/russian-travel-react/index.html",
+    "static/css/main.da3088f9.chunk.css.map": "/russian-travel-react/static/css/main.da3088f9.chunk.css.map",
+    "static/js/2.68830b48.chunk.js.LICENSE.txt": "/russian-travel-react/static/js/2.68830b48.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/russian-travel-react/static/media/cover-trains.d20ab4cb.jpg",
+    "static/media/header-logo.573918d3.svg": "/russian-travel-react/static/media/header-logo.573918d3.svg",
+    "static/media/lead-polka.b27972c0.jpg": "/russian-travel-react/static/media/lead-polka.b27972c0.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.8e084e13.js",
+    "static/js/runtime-main.807d7b12.js",
     "static/js/2.68830b48.chunk.js",
-    "static/css/main.94b12a00.chunk.css",
+    "static/css/main.da3088f9.chunk.css",
     "static/js/main.913cbf6f.chunk.js"
   ]
 }
